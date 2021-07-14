@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url(sanitize.css);
+
+:root {
+  --color-background: #1a181b;
+  --color-text: #ffffff;
+  --color-one: #61dafb;
+  --font-one: 'Noto Sans JP';
+  --font-two: 'Noto Sans JP';
+}
+
+*,
+*:before,
+*:after,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: var(--color-one);
+  font-family: var(--font-two);
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-one);
+}
+
+.main {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.main__title {
+  font-size: 8rem;
+}
+
+.main__logo {
+  margin-bottom: 32px;
+  width: 220px;
+  height: 200px;
+  animation: float 1.5s ease-in-out infinite alternate;
+}
+
+.main__stack {
+  display: grid;
+  grid-template-columns: repeat(6, 200px);
+  list-style: none;
+  justify-items: center;
+  align-items: center;
+  
+  &-title {
+    font-size: 6rem;
+    margin: 32px 0;
+    color: var(--color-text);
+  }
+
+  &-subtitle {
+    color: var(--color-text);
+    text-decoration: underline var(--color-one) double;
+  }
+
+  &-item {
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
+@keyframes float {
+  from {
+    transform: translateY(16px);
+  }
+
+  to {
+    transform: translateY(-16px);
+  }
+}
