@@ -1,3 +1,4 @@
+import * as React from 'react';
 import './App.scss';
 
 function App() {
@@ -11,13 +12,19 @@ function App() {
       <h1 className="main__title">React Template - Vite</h1>
       <h2 className="main__stack-title">Tech Stack</h2>
       <ul className="main__stack">
-        {['React', 'Sass', 'Typescript', 'Vite', 'ESLint', 'Prettier'].map(
-          (topic) => (
-            <li key={topic} className="main__stack-item">
-              <h3 className="main__stack-subtitle">{topic}</h3>
-            </li>
-          )
-        )}
+        {[
+          'React',
+          'Typescript',
+          'Sass',
+          'Vite',
+          'ESLint',
+          'Prettier',
+          'Husky',
+        ].map((topic) => (
+          <li key={topic} className="main__stack-item">
+            <h3 className="main__stack-subtitle">{topic}</h3>
+          </li>
+        ))}
       </ul>
     </main>
   );
