@@ -1,14 +1,15 @@
-import Hero from './features/Hero/Hero'
-
-const props = {
-  hero: {
-    title: 'React Template Vite',
-    description: 'A React + Typescript starter using Vite 3',
-  },
-}
+import Router from './features/Routes/Routes'
+import { Global } from 'primitivex'
+import { HelmetProvider } from 'react-helmet-async'
 
 function App() {
-  return <Hero {...props.hero} />
+  return (
+    <Global>
+      <HelmetProvider>
+        <Router />
+      </HelmetProvider>
+    </Global>
+  )
 }
 
 export default App

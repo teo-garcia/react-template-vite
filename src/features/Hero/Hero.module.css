@@ -11,10 +11,10 @@
   justify-content: center;
   align-items: center;
   gap: 16px 0;
-  color: var(--color-background);
 }
 
 .icon {
+  color: var(--color-background);
   width: 150px;
   height: 150px;
 }
@@ -25,11 +25,6 @@
 
 .description {
   font-size: var(--font-m);
-}
-
-.title,
-.description {
-  color: var(--color-background);
 }
 
 @media (min-width: 768px) {

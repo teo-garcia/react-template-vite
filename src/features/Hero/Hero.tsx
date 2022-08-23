@@ -12,10 +12,21 @@ function Hero(props: HeroProps) {
   return (
     <Box className={styles.container}>
       <FaReact className={styles.icon} />
-      <Typography tag="h2" className={styles.title}>
+      <Typography
+        tag="h2"
+        color="background"
+        weight="bold"
+        className={styles.title}
+      >
         {title}
       </Typography>
-      <Typography className={styles.description}>{description}</Typography>
+      <Typography
+        color="background"
+        weight="bold"
+        className={styles.description}
+      >
+        {description}
+      </Typography>
     </Box>
   )
 }
