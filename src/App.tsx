@@ -1,11 +1,14 @@
-import { Box, Typography } from 'primitivex'
+import Hero from './features/Hero/Hero'
+
+const props = {
+  hero: {
+    title: 'React Template Vite',
+    description: 'A React + Typescript starter using Vite 3',
+  },
+}
 
 function App() {
-  return (
-    <Box>
-      <Typography tag="h1">Hello World</Typography>
-    </Box>
-  )
+  return <Hero {...props.hero} />
 }
 
 export default App
