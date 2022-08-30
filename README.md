@@ -9,7 +9,7 @@ A faster way to start using React with Typescript.
 
 ## Requirements
 
-- `Node 14+`
+- `Node 16+`
 - `Git 2+`
 
 ## Installation

@@ -1,8 +1,11 @@
 {
   "name": "react-template-vite",
-  "private": true,
   "version": "1.0.0",
   "type": "module",
+  "private": true,
+  "engines": {
+    "node": "^16"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
