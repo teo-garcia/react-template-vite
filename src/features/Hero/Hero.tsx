@@ -13,7 +13,7 @@ function Hero(props: HeroProps) {
     <Box className={styles.container}>
       <FaReact className={styles.icon} />
       <Typography
-        tag="h2"
+        tag="h1"
         color="background"
         weight="bold"
         className={styles.title}

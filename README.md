@@ -40,14 +40,18 @@ A faster way to start using React with Typescript.
 - Linting with ESLint + Stylelint + Prettier.
 - Git Hooks with Husky + Lint Staged.
 - Unit Testing with Jest + RTL.
+- E2E Testing with Cypress.
 
 ## Commands
 
-| **Command** | **Description**                    |
-| ----------- | ---------------------------------- |
-| dev         | Run `dev:web`.                     |
-| build       | Run `build:web`.                   |
-| preview     | Run `vite` server (build required) |
-| test        | Run `jest`                         |
-| lint:css    | Lint CSS files.                    |
-| lint:js     | Lint JS files.                     |
+| **Command** | **Description**                              |
+| ----------- | -------------------------------------------- |
+| dev         | Run `dev:web`.                               |
+| build       | Run `build:web`.                             |
+| dev:web     | Run `vite` in `DEV` mode.                    |
+| build:web   | Run `vite` in `PROD` mode.                   |
+| start:web   | Run `vite` server (build required).          |
+| test:unit   | Run `jest`.                                  |
+| test:e2e    | Run `build:web`, `start:web`, and `cypress`. |
+| lint:css    | Lint CSS files.                              |
+| lint:js     | Lint JS files.                               |

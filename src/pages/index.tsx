@@ -1,6 +1,7 @@
-import Hero from '../features/Hero/Hero'
-import { Seo } from 'primitivex'
 import { Helmet } from 'react-helmet-async'
+import { Seo } from 'primitivex'
+import Hero from '@features/Hero/Hero'
+import { useQuery } from '@tanstack/react-query'
 
 const props = {
   hero: {
@@ -9,7 +10,13 @@ const props = {
   },
 }
 
+const fetcher = () =>
+  fetch('https://jsonplaceholder.typicode.com/todos/1')
+    .then((res) => res.json())
+    .then((res) => res)
+
 function HomePage() {
+  useQuery(['Fake ToDo'], fetcher)
   return (
     <>
       <Seo component={Helmet} title="Home | RTV" />

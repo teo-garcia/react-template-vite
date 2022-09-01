@@ -1,15 +1,7 @@
-import Router from './features/Routes/Routes'
-import { Global } from 'primitivex'
-import { HelmetProvider } from 'react-helmet-async'
+import Providers from '@components/Providers/Providers'
 
 function App() {
-  return (
-    <Global>
-      <HelmetProvider>
-        <Router />
-      </HelmetProvider>
-    </Global>
-  )
+  return <Providers />
 }
 
 export default App
