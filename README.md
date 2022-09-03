@@ -3,7 +3,7 @@
 ![Package License](https://img.shields.io/github/license/teo-garcia/react-template-vite)
 ![Package Version](https://img.shields.io/github/package-json/v/teo-garcia/react-template-vite)
 
-# React Template vite
+# React Template Vite
 
 A faster way to start using React with Typescript.
 
@@ -11,6 +11,7 @@ A faster way to start using React with Typescript.
 
 - `Node 16+`
 - `Git 2+`
+- `Yarn 1`
 
 ## Installation
 
