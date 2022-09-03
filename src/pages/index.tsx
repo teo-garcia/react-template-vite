@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async'
-import { Seo } from 'primitivex'
+import { Seo } from 'primitive-jsx'
 import Hero from '@features/Hero/Hero'
 import { useQuery } from '@tanstack/react-query'
 
@@ -19,7 +19,7 @@ function HomePage() {
   useQuery(['Fake ToDo'], fetcher)
   return (
     <>
-      <Seo component={Helmet} title="Home | RTV" />
+      <Seo component={Helmet} title="Home | Vite" />
       <Hero {...props.hero} />
     </>
   )

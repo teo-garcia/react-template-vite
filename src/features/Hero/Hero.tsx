@@ -1,4 +1,4 @@
-import { Box, Typography } from 'primitivex'
+import { Box, Typography } from 'primitive-jsx'
 import { FaReact } from 'react-icons/fa'
 import styles from './Hero.module.css'
 

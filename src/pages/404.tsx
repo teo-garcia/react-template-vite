@@ -1,7 +1,7 @@
 import styles from './404.module.css'
-import { Seo } from 'primitivex'
+import { Seo } from 'primitive-jsx'
 import { Helmet } from 'react-helmet-async'
-import { Box, Typography } from 'primitivex'
+import { Box, Typography } from 'primitive-jsx'
 import { FaSadTear } from 'react-icons/fa'
 
 function NotFoundPage() {
