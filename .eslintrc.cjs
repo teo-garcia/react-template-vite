@@ -8,6 +8,7 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'plugin:jest/recommended',
     'plugin:testing-library/react',
+    'plugin:playwright/playwright-test',
     'plugin:prettier/recommended',
   ],
   parserOptions: {

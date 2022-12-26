@@ -1,4 +1,4 @@
-import { Box, Typography } from 'primitive-jsx'
+import { Box, Text } from 'primitive-jsx'
 import { FaReact } from 'react-icons/fa'
 import styles from './Hero.module.css'
 
@@ -12,21 +12,12 @@ function Hero(props: HeroProps) {
   return (
     <Box className={styles.container}>
       <FaReact className={styles.icon} />
-      <Typography
-        tag="h1"
-        color="background"
-        weight="bold"
-        className={styles.title}
-      >
+      <Text tag="h1" color="background" weight="bold" className={styles.title}>
         {title}
-      </Typography>
-      <Typography
-        color="background"
-        weight="bold"
-        className={styles.description}
-      >
+      </Text>
+      <Text color="background" weight="bold" className={styles.description}>
         {description}
-      </Typography>
+      </Text>
     </Box>
   )
 }

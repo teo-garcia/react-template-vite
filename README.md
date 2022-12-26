@@ -41,7 +41,7 @@ A faster way to start using React with Typescript.
 - Linting with ESLint + Stylelint + Prettier.
 - Git Hooks with Husky + Lint Staged.
 - Unit Testing with Jest + RTL.
-- E2E Testing with Cypress.
+- E2E Testing with Playwright.
 
 ## Commands
 

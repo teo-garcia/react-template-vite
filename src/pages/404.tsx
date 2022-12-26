@@ -1,23 +1,24 @@
 import styles from './404.module.css'
-import { Seo } from 'primitive-jsx'
 import { Helmet } from 'react-helmet-async'
-import { Box, Typography } from 'primitive-jsx'
+import { Box, Text } from 'primitive-jsx'
 import { FaSadTear } from 'react-icons/fa'
 
 function NotFoundPage() {
   return (
     <>
-      <Seo component={Helmet} title="404 | RTV" />
+      <Helmet>
+        <title>404 | Vite 4</title>
+      </Helmet>
       <Box className={styles.container} background="secondary">
         <FaSadTear className={styles.icon} />
-        <Typography
+        <Text
           tag="h1"
           color="background"
           className={styles.title}
           weight="bold"
         >
           We could not find this page
-        </Typography>
+        </Text>
       </Box>
     </>
   )

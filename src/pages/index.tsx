@@ -1,12 +1,12 @@
 import { Helmet } from 'react-helmet-async'
-import { Seo } from 'primitive-jsx'
-import Hero from '@features/Hero/Hero'
 import { useQuery } from '@tanstack/react-query'
+
+import Hero from '@features/Hero/Hero'
 
 const props = {
   hero: {
     title: 'React Template Vite',
-    description: 'A React + Typescript starter using Vite 3',
+    description: 'A React + Typescript starter using Vite 4',
   },
 }
 
@@ -19,7 +19,9 @@ function HomePage() {
   useQuery(['Fake ToDo'], fetcher)
   return (
     <>
-      <Seo component={Helmet} title="Home | Vite" />
+      <Helmet>
+        <title>Home | Vite 4</title>
+      </Helmet>
       <Hero {...props.hero} />
     </>
   )
