@@ -1,6 +1,6 @@
 import { Providers } from '@components/Providers/Providers'
 
-function App() {
+const App = () => {
   return <Providers />
 }
 

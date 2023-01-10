@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async'
 import type { SeoProps } from '@lib/types/client'
 
-function Seo(props: SeoProps) {
+const Seo = (props: SeoProps) => {
   const {
     title,
     description = '',

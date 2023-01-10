@@ -35,7 +35,7 @@ A faster way to start using React with Typescript.
 
 ## Features
 
-- Vite 3.
+- Vite 4.
 - React 18.
 - Typescript 4.
 - Linting with ESLint + Stylelint + Prettier.

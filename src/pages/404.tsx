@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import { Box, Text } from 'primitive-jsx'
 import { FaSadTear } from 'react-icons/fa'
 
-function NotFoundPage() {
+const NotFoundPage = () => {
   return (
     <>
       <Helmet>

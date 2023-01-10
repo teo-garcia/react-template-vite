@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { HomePage } from '@pages/index'
 import { NotFoundPage } from '@pages/404'
 
-function Router() {
+const Router = () => {
   return (
     <BrowserRouter>
       <Routes>

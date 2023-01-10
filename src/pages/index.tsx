@@ -14,7 +14,7 @@ const fetcher = () =>
     .then((res) => res.json())
     .then((res) => res)
 
-function HomePage() {
+const HomePage = () => {
   useQuery(['Fake ToDo'], fetcher)
   return (
     <>
