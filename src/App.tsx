@@ -1,7 +1,7 @@
-import Providers from '@components/Providers/Providers'
+import { Providers } from '@components/Providers/Providers'
 
 function App() {
   return <Providers />
 }
 
-export default App
+export { App }

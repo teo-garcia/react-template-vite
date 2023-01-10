@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import HomePage from '../../pages'
-import NotFoundPage from '../../pages/404'
+import { HomePage } from '@pages/index'
+import { NotFoundPage } from '@pages/404'
 
 function Router() {
   return (
@@ -13,4 +13,4 @@ function Router() {
   )
 }
 
-export default Router
+export { Router }

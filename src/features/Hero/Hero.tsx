@@ -1,13 +1,9 @@
-import { Box, Text } from 'primitive-jsx'
-import { FaReact } from 'react-icons/fa'
 import styles from './Hero.module.css'
+import { FaReact } from 'react-icons/fa'
+import { Box, Text } from 'primitive-jsx'
+import { HeroProps } from '@lib/types/client'
 
-type HeroProps = {
-  title: string
-  description: string
-}
-
-function Hero(props: HeroProps) {
+const Hero = (props: HeroProps) => {
   const { title, description } = props
   return (
     <Box className={styles.container}>
@@ -22,4 +18,4 @@ function Hero(props: HeroProps) {
   )
 }
 
-export default Hero
+export { Hero }

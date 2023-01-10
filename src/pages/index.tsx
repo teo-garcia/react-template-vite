@@ -1,7 +1,6 @@
-import { Helmet } from 'react-helmet-async'
 import { useQuery } from '@tanstack/react-query'
-
-import Hero from '@features/Hero/Hero'
+import { Hero } from '@features/Hero/Hero'
+import { Seo } from '@components/Seo/Seo'
 
 const props = {
   hero: {
@@ -19,12 +18,10 @@ function HomePage() {
   useQuery(['Fake ToDo'], fetcher)
   return (
     <>
-      <Helmet>
-        <title>Home | Vite 4</title>
-      </Helmet>
+      <Seo title="Home | Vite 4" />
       <Hero {...props.hero} />
     </>
   )
 }
 
-export default HomePage
+export { HomePage }

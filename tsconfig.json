@@ -16,6 +16,7 @@
       "@components/*": ["components/*"],
       "@features/*": ["features/*"],
       "@lib/*": ["lib/*"],
+      "@pages/*": ["pages/*"],
     },
     "resolveJsonModule": true,
     "skipLibCheck": true,
