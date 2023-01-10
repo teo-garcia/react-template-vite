@@ -24,4 +24,9 @@ module.exports = {
     browser: true,
     node: true,
   },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
 }
