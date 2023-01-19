@@ -1,20 +1,13 @@
 .container {
-  height: 100vh;
   background-image: linear-gradient(
     270deg,
     var(--color-primary),
     var(--color-secondary)
   );
-  text-align: center;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
   gap: 16px 0;
 }
 
 .icon {
-  color: var(--color-background);
   width: 150px;
   height: 150px;
 }
@@ -23,17 +16,10 @@
   font-size: var(--font-l);
 }
 
-.description {
-  font-size: var(--font-m);
-}
-
 @media (min-width: 768px) {
   .title {
     font-size: var(--font-xl);
-  }
-
-  .description {
-    font-size: var(--font-l);
+    width: 500px;
   }
 }
 
@@ -49,9 +35,6 @@
 
   .title {
     font-size: var(--font-xxl);
-  }
-
-  .description {
-    font-size: var(--font-xl);
+    width: auto;
   }
 }

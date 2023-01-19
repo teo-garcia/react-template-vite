@@ -1,11 +1,10 @@
 import { useQuery } from '@tanstack/react-query'
-import { Hero } from '@features/Hero/Hero'
+import { Banner } from '@features/Banner/Banner'
 import { Seo } from '@components/Seo/Seo'
 
 const props = {
-  hero: {
+  banner: {
     title: 'React Template Vite',
-    description: 'A React + Typescript starter using Vite 4',
   },
 }
 
@@ -18,8 +17,8 @@ const HomePage = () => {
   useQuery(['Fake ToDo'], fetcher)
   return (
     <>
-      <Seo title="Home | Vite 4" />
-      <Hero {...props.hero} />
+      <Seo title="Vite 4 | Home" />
+      <Banner {...props.banner} />
     </>
   )
 }

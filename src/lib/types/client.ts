@@ -12,7 +12,6 @@ export type SeoProps = {
   title: string
 }
 
-export type HeroProps = {
+export type BannerProps = {
   title: string
-  description: string
 }

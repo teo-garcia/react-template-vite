@@ -1,10 +1,4 @@
 .container {
-  height: 100vh;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   gap: 48px 0;
 }
 
@@ -13,19 +7,14 @@
   height: 100px;
 }
 
-.icon,
 .title {
-  color: var(--color-background);
-}
-
-.title {
-  max-width: 80%;
+  width: 300px;
   font-size: var(--font-l);
 }
 
 @media (min-width: 768px) {
   .title {
-    max-width: 60%;
+    width: 600px;
     font-size: var(--font-xl);
   }
 }
@@ -37,7 +26,7 @@
   }
 
   .title {
-    max-width: 50%;
+    width: 1000px;
     font-size: var(--font-xxl);
   }
 }
