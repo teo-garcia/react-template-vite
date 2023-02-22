@@ -1,8 +1,8 @@
 module.exports = {
   '**/*.{js,jsx,ts,tsx}': [
-    'yarn prettier --write',
-    'yarn lint:js --fix',
-    'yarn test:unit --passWithNoTests',
+    'npx prettier --write',
+    'npm run lint:js --fix',
+    'npm run test:unit',
   ],
-  '**/*.css': ['yarn lint:css --fix'],
+  '**/*.css': ['npm run lint:css --fix'],
 }

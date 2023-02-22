@@ -4,4 +4,4 @@ const NotFoundPage = () => {
   return <NotFoundBanner />
 }
 
-export { NotFoundPage }
+export default NotFoundPage

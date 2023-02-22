@@ -1,29 +1,23 @@
 import styles from './NotFoundBanner.module.css'
-import { Box, Text } from 'primitive-jsx'
 import { FaSearch } from 'react-icons/fa'
 import { Seo } from '@components/Seo/Seo'
-import classNames from 'classnames'
+import clsx from 'clsx'
 
 const NotFoundBanner = () => {
   return (
     <>
       <Seo title="Vite 4 | 404" />
-      <Box
-        className={classNames(
-          'h-100vh d-flex fd-column jc-center ai-center ta-center',
+      <div
+        className={clsx(
+          'h-100vh d-flex fd-column jc-center ai-center ta-center bc-secondary',
           styles.container
         )}
-        background="secondary"
       >
-        <FaSearch className={classNames('c-background', styles.icon)} />
-        <Text
-          tag="h1"
-          className={classNames('c-background fw-bold', styles.title)}
-          weight="bold"
-        >
+        <FaSearch className={clsx('c-background', styles.icon)} />
+        <h1 className={clsx('c-background fw-bold', styles.title)}>
           We could not find this page
-        </Text>
-      </Box>
+        </h1>
+      </div>
     </>
   )
 }
