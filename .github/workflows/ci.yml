@@ -18,10 +18,16 @@ jobs:
           node-version: 16
 
       - name: Install dependencies 🤖
-        run: npm ci --force
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
 
       - name: Build the code 🤖
-        run: npm run build:web
+        uses: borales/actions-yarn@v4
+        with: 
+          cmd: build:web
 
       - name: Run unit tests 🤖
-        run: npm run test:unit
+        uses: borales/actions-yarn@v4
+        with: 
+          cmd: test:unit
