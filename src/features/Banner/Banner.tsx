@@ -1,20 +1,25 @@
 import styles from './Banner.module.css'
 import clsx from 'clsx'
 import { FaReact } from 'react-icons/fa'
-import type { BannerProps } from '@lib/types/client'
 
-const Banner = (props: BannerProps) => {
+export type BannerProps = {
+  title: string
+}
+
+function Banner(props: BannerProps) {
   const { title } = props
   return (
-    <div
+    <section
       className={clsx(
-        'h-100vh ta-center d-flex fd-column jc-center ai-center',
+        'h-100vh d-flex fd-column ai-center jc-center bc-primary',
         styles.container
       )}
     >
-      <FaReact className={clsx('c-background', styles.icon)} />
-      <h1 className={clsx('c-background fw-bold', styles.title)}>{title}</h1>
-    </div>
+      <FaReact className={clsx('c-secondary', styles.icon)} />
+      <h1 className={clsx('ta-center c-secondary fw-bold', styles.title)}>
+        {title}
+      </h1>
+    </section>
   )
 }
 
