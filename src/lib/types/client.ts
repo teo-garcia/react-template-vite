@@ -15,3 +15,5 @@ export type SeoProps = {
 export type BannerProps = {
   title: string
 }
+
+export type ThemeMode = 'light' | 'dark'

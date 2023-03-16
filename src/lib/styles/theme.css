@@ -1,10 +1,5 @@
 /* CSS Variables */
 :root {
-  --color-text: #000000;
-  --color-background: #ffffff;
-  --color-neutral: #d2d2d2;
-  --color-primary: #87ceeb;
-  --color-secondary: #1a2e43;
   --font-primary: 'Ubuntu';
   --font-secondary: 'Ubuntu';
   --font-regular: 400;
@@ -15,4 +10,20 @@
   --font-l: 8rem;
   --font-xl: 10rem;
   --font-xxl: 12rem;
+}
+
+body[data-theme='light'] {
+  --color-text: #333333;
+  --color-background: #f5f7fa;
+  --color-neutral: #09111d;
+  --color-primary: #4a90e2;
+  --color-secondary: #003057;
+}
+
+body[data-theme='dark'] {
+  --color-text: #f5f7fa;
+  --color-background: #333333;
+  --color-neutral: #a9b1bc;
+  --color-primary: #4a90e2;
+  --color-secondary: #1680d7;
 }
