@@ -1,23 +1,12 @@
-import styles from './NotFoundBanner.module.css'
-import { FaSearch } from 'react-icons/fa'
-import { Seo } from '@components/Seo/Seo'
-import clsx from 'clsx'
+import { FaInfoCircle } from 'react-icons/fa'
 
 const NotFoundBanner = () => {
   return (
     <>
-      <Seo title="Vite 4 | 404" />
-      <div
-        className={clsx(
-          'h-100vh d-flex fd-column jc-center ai-center ta-center bc-secondary',
-          styles.container
-        )}
-      >
-        <FaSearch className={clsx('c-background', styles.icon)} />
-        <h1 className={clsx('c-background fw-bold', styles.title)}>
-          We could not find this page
-        </h1>
-      </div>
+      <section className="flex h-screen flex-col items-center justify-center gap-y-8 bg-blue-500 dark:bg-zinc-900">
+        <FaInfoCircle className="h-16 w-16 text-white" />
+        <h1 className="text-2xl text-white">Page not found</h1>
+      </section>
     </>
   )
 }
