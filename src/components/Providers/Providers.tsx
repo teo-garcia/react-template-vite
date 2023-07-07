@@ -1,12 +1,11 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { HelmetProvider } from 'react-helmet-async'
-import { Router } from '@features/Routes/Routes'
+import { Router } from '@features/Router/Router'
 import { ThemeSwitch } from '@components/ThemeSwitch/ThemeSwitch'
 
 const isDEV = process.env.NODE_ENV === 'development'
 
-/* React Query */
 const queryClient = new QueryClient()
 
 const Providers = () => {
