@@ -1,0 +1,51 @@
+name: Dependencies Update 🤖
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 0/2' # Every other Sunday at midnight (UTC time)
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code 🤖
+        uses: actions/checkout@v3
+
+      - name: Setup Node 🤖
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Update dependencies 🤖
+        run: npx npm-check-updates -u
+
+      - name: Install dependencies 🤖
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
+
+      - name: Run unit tests 🤖
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: test:unit
+
+      - name: Check for changes 🤖
+        id: check_changes
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            echo "Changes found!"
+            echo ::set-output name=has_changes::true
+          else
+            echo "No changes found!"
+            echo ::set-output name=has_changes::false
+          fi
+
+      - name: Commit and Push changes 🤖
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git commit -am "chore: Dependencies Update 🤖"
+          git push

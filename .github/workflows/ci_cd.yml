@@ -1,16 +1,44 @@
-name: Continuous Deployment 🚀
+name: CI/CD 🤖🚀
 
 on:
+  push:
+    branches:
+      - main
   workflow_run:
-    workflows: [Continuous Integration 🤖]
+    workflows: ['Dependencies Update 🤖']
     types:
       - completed
 
-env:
-  VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-
 jobs:
-  deploy:
+  CI:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout to the branch 🤖
+        uses: actions/checkout@v3
+
+      - name: Setup Node 🤖
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install dependencies 🤖
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
+
+      - name: Build the code 🤖
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build:web
+
+      - name: Run unit tests 🤖
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: test:unit
+
+  CD:
+    needs: CI
     runs-on: ubuntu-latest
 
     steps:
