@@ -2,6 +2,7 @@ import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { ThemeSwitch } from './ThemeSwitch'
 
+// TODO: Fix tests warnings
 describe('<ThemeSwitch /> tests', () => {
   const user = userEvent.setup()
 
