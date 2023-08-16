@@ -1,5 +1,5 @@
-module.exports = {
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.cjs'],
+export default {
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   testEnvironment: 'jest-environment-jsdom',
   moduleNameMapper: {
     '\\.(css|sass|scss)$': 'identity-obj-proxy',
@@ -9,4 +9,7 @@ module.exports = {
     '^@pages/(.*)$': '<rootDir>/src/pages/$1',
   },
   testPathIgnorePatterns: ['<rootDir>/e2e'],
+  transform: {
+    '^.+\\.tsx?$': 'ts-jest',
+  },
 }

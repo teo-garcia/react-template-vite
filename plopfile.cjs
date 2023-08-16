@@ -1,5 +1,5 @@
-/* Since this code is being run directly with Node.js, we cannot use ES imports.
-Instead, we must use CommonJS require statements to load dependencies. */
+// TODO: Use ts-node
+
 /* eslint-disable-next-line */
 const { getPlopGenerators } = require('./src/lib/tools/getPlopGenerators.cjs')
 
