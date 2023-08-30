@@ -15,11 +15,6 @@ const getActionsByType = (type) => {
     },
     {
       type: 'add',
-      path: `src/${dirName}/{{pascalCase name}}/{{pascalCase name}}.module.css`,
-      templateFile: 'templates/component.css.hbs',
-    },
-    {
-      type: 'add',
       path: `src/${dirName}/{{pascalCase name}}/{{pascalCase name}}.test.tsx`,
       templateFile: 'templates/component.test.hbs',
     },
