@@ -23,7 +23,7 @@
     "strict": true,
     "target": "ESNext"
   },
-  "include": ["src", "./jest.setup.ts"],
+  "include": ["src", "./jest.setup.js"],
   "references": [
     {
       "path": "./tsconfig.node.json"
