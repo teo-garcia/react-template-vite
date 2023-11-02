@@ -1,4 +1,4 @@
-import { Providers } from '@components/Providers/Providers'
+import { Providers } from 'components/Providers/Providers'
 
 const App = () => {
   return <Providers />

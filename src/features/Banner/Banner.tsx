@@ -1,4 +1,4 @@
-import { useHealthcheck } from '@lib/tools/hooks'
+import { useHealthcheck } from 'lib/hooks/useHealthcheck'
 import { FaReact } from 'react-icons/fa'
 
 export type BannerProps = {

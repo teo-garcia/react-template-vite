@@ -1,7 +1,7 @@
 import { waitFor } from '@testing-library/react'
 import { Seo } from './Seo'
-import { customRender } from '@lib/tools/customRender'
-import { getMetaContent } from '@lib/tools/getMetaContent'
+import { customRender } from 'lib/misc/customRender'
+import { getMetaContent } from 'lib/misc/getMetaContent'
 
 describe('<Seo /> tests', () => {
   const mockProps = {

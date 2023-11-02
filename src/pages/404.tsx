@@ -1,4 +1,4 @@
-import { NotFoundBanner } from '@features/NotFoundBanner/NotFoundBanner'
+import { NotFoundBanner } from 'features/NotFoundBanner/NotFoundBanner'
 
 const NotFoundPage = () => {
   return <NotFoundBanner />

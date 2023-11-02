@@ -12,12 +12,6 @@
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
-    "paths": {
-      "@components/*": ["components/*"],
-      "@features/*": ["features/*"],
-      "@lib/*": ["lib/*"],
-      "@pages/*": ["pages/*"]
-    },
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,

@@ -1,7 +1,5 @@
-// TODO: Use ts-node
-
 /* eslint-disable-next-line */
-const { getPlopGenerators } = require('./src/lib/tools/getPlopGenerators.cjs')
+const { getPlopGenerators } = require('./src/lib/misc/getPlopGenerators.cjs')
 
 module.exports = (plop) => {
   plop.setGenerator('component', getPlopGenerators('component'))

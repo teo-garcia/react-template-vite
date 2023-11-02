@@ -1,10 +1,10 @@
-import { Banner } from '@features/Banner/Banner'
-import { Seo } from '@components/Seo/Seo'
+import { Banner } from 'features/Banner/Banner'
+import { Seo } from 'components/Seo/Seo'
 
 const HomePage = () => {
   return (
     <>
-      <Seo title="Vite 4 | Home" />
+      <Seo title="Home | RTV" />
       <Banner title="React Template Vite" />
     </>
   )
