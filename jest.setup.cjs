@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 require('@testing-library/jest-dom')
 
-const { server } = require('./src/mocks/server')
+// const { server } = require('./src/mocks/node')
 
-beforeAll(() => server.listen())
+// beforeAll(() => server.listen())
 
-afterEach(() => server.resetHandlers())
+// afterEach(() => server.resetHandlers())
 
-afterAll(() => server.close())
+// afterAll(() => server.close())

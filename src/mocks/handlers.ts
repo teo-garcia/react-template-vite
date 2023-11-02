@@ -1,15 +1,14 @@
-import { rest } from 'msw'
+import { HttpResponse, http } from 'msw'
 
-const healthHandler = rest.get(
-  'http://localhost:3001/health',
-  (_req, res, ctx) => {
-    return res(
-      ctx.status(200),
-      ctx.json({
-        status: 'ok',
-      })
-    )
-  }
-)
+const healthcheckHandler = http.get('http://localhost:3001/healthcheck', () => {
+  return HttpResponse.json(
+    {
+      message: 'ok',
+      status: 200,
+      data: null,
+    },
+    { status: 200 }
+  )
+})
 
-export const handlers = [healthHandler]
+export const handlers = [healthcheckHandler]

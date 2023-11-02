@@ -16,7 +16,7 @@ const Providers = () => {
         <ThemeSwitch />
         <Router />
       </HelmetProvider>
-      {isDEV && <ReactQueryDevtools />}
+      <ReactQueryDevtools buttonPosition="bottom-left" />
       {isDEV && <ViewportInfo />}
     </QueryClientProvider>
   )
