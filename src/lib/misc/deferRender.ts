@@ -1,6 +1,6 @@
 const deferRender = async () => {
-  const { setupMSW } = await import('../../lib/mocks')
-  return setupMSW()
+  const { setupMSWBrowser } = await import('../../lib/mocks')
+  return setupMSWBrowser()
 }
 
 export { deferRender }

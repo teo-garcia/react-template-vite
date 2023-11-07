@@ -4,8 +4,7 @@ import { HelmetProvider } from 'react-helmet-async'
 import { Router } from 'features/Router/Router'
 import { ThemeSwitch } from 'components/ThemeSwitch/ThemeSwitch'
 import { ViewportInfo } from 'components/ViewportInfo/ViewportInfo'
-
-const isDEV = process.env.NODE_ENV === 'development'
+import { isDevelopment } from 'lib/misc/config'
 
 const queryClient = new QueryClient()
 
@@ -17,7 +16,7 @@ const Providers = () => {
         <Router />
       </HelmetProvider>
       <ReactQueryDevtools buttonPosition="bottom-left" />
-      {isDEV && <ViewportInfo />}
+      {isDevelopment() && <ViewportInfo />}
     </QueryClientProvider>
   )
 }
