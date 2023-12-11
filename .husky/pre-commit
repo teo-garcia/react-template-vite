@@ -2,7 +2,7 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 # Type Checking
-yarn tsc --noEmit
+pnpm tsc --noEmit
 
 # Linting
-yarn lint-staged
+pnpm lint-staged
