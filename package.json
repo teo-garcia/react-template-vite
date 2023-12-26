@@ -48,6 +48,7 @@
     "autoprefixer": "^10.4.16",
     "babel-jest": "^29.7.0",
     "concurrently": "^8.2.2",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-jest": "^27.6.0",
@@ -75,5 +76,10 @@
   },
   "msw": {
     "workerDirectory": "public"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
