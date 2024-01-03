@@ -39,10 +39,10 @@ Start building modern web applications using React and Vite.
 - React 18.
 - Typescript 4.
 - ESLint 8 + Prettier 3.
-- Husky 8 + Lint Staged 13.
+- Husky 8 + Lint Staged 15.
 - Jest 29 + Testing Library React 14.
 - Playwright 1.
-- MSW 1.
+- MSW 2.
 
 ## Commands
 
