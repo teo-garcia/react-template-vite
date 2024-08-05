@@ -9,8 +9,8 @@ export default {
         sans: ['Inter', 'sans-serif'],
       },
       colors: {
-        primary: colors.amber['500'],
-        secondary: colors.amber['600'],
+        primary: colors.blue['600'],
+        secondary: colors.blue['400'],
         black: colors.slate['800'],
         white: colors.slate['100'],
       },

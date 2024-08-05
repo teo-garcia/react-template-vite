@@ -1,3 +1,7 @@
 module.exports = {
-  '**/*.{js,jsx,ts,tsx}': ['npx prettier --write', 'npm run lint:js --fix'],
+  '**/*.{js,jsx,ts,tsx}': [
+    'pnpm prettier --write',
+    'pnpm lint:js --fix',
+    'pnpm test:unit --passWithNoTests',
+  ],
 }

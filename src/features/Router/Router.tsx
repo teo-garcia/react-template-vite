@@ -1,7 +1,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import HomePage from 'pages/index'
-import NotFoundPage from 'pages/404'
+
 import { Layout } from 'components/Layout/Layout'
+import NotFoundPage from 'pages/404'
+import HomePage from 'pages/index'
 
 const homePage = {
   path: '/',

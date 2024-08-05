@@ -1,6 +1,8 @@
-import { isDevelopment } from 'lib/misc/config'
+'use client'
 import { useEffect, useState } from 'react'
 import { TfiRulerAlt2 } from 'react-icons/tfi'
+
+import { isDevelopment } from 'lib/misc/config'
 
 const ViewportInfo = () => {
   const [viewportWidth, setViewportWidth] = useState<number | null>(null)
