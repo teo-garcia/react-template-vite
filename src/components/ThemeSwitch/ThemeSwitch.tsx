@@ -1,8 +1,9 @@
 'use client'
 
-import type { ThemeMode } from 'lib/misc/types'
 import { useEffect, useState } from 'react'
 import { FaSun, FaMoon } from 'react-icons/fa'
+
+import type { ThemeMode } from 'lib/misc/types'
 
 const ThemeSwitch = () => {
   const [theme, setTheme] = useState<ThemeMode>(
