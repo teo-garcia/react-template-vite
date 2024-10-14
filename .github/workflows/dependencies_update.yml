@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node 🤖
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 'lts-alpine'
 
       - name: Setup pnpm 🤖
         uses: pnpm/action-setup@v2
@@ -25,8 +25,8 @@ jobs:
           run_install: false
 
       - name: Update dependencies 🤖
-        run: pnpm dlx npm-check-updates -u --target minor"
-  
+        run: pnpm dlx npm-check-updates -u --target minor
+
       - name: Install dependencies 🤖
         run: pnpm install --no-frozen-lockfile
 
