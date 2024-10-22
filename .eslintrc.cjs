@@ -103,6 +103,9 @@ module.exports = {
     ],
     // Enforce no duplicate imports
     'import/no-duplicates': 'error',
+
+    // Set non used vars to warning
+    '@typescript-eslint/no-unused-vars': 'warn',
   },
 
   // The 'parserOptions' object configures the parser for TypeScript
