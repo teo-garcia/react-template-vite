@@ -1,5 +1,6 @@
 import { act, render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
+
 import { ThemeSwitch } from './ThemeSwitch'
 
 describe('<ThemeSwitch /> tests', () => {
