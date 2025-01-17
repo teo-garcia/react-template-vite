@@ -11,7 +11,7 @@ test.describe('Homepage tests', () => {
 
   test('Page should contain heading', async ({ page }) => {
     // eslint-disable-next-line
-    const title = page.getByRole('heading', { name: 'React Template Vite' })
+    const title = page.getByRole('heading', { name: 'React Template RR' })
     await expect(title).toBeVisible()
   })
 })

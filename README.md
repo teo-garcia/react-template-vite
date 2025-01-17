@@ -1,9 +1,9 @@
 <!-- ![README.md banner](./README.png) -->
 
-![Package License](https://img.shields.io/github/license/teo-garcia/react-template-vite)
-![Package Version](https://img.shields.io/github/package-json/v/teo-garcia/react-template-vite)
+![Package License](https://img.shields.io/github/license/teo-garcia/react-template-rr)
+![Package Version](https://img.shields.io/github/package-json/v/teo-garcia/react-template-rr)
 
-# React Template Vite
+# React Template RR
 
 Start building modern web applications using React and Vite.
 
@@ -18,7 +18,7 @@ Start building modern web applications using React and Vite.
 1. Get the template using `npx degit`:
 
 ```bash
-  npx degit teo-garcia/react-template-vite my_project
+  npx degit teo-garcia/react-template-rr my_project
 ```
 
 2. Install the dependencies:
