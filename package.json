@@ -20,6 +20,7 @@
     "lint:js": "eslint src/**/*.{ts,tsx}"
   },
   "dependencies": {
+    "@iconify/react": "^5.2.0",
     "@react-router/node": "^7.1.2",
     "@react-router/serve": "^7.1.2",
     "@tanstack/react-query": "^5.64.1",

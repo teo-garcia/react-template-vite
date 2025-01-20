@@ -1,4 +1,5 @@
 import { Banner } from '~/features/Banner/Banner'
+import { useHealthcheck } from '~/lib/hooks/useHealthcheck'
 
 import type { Route } from './+types/_index'
 
@@ -17,5 +18,8 @@ export async function loader() {
 
 export default function HomePage({ loaderData }: Route.ComponentProps) {
   const { title } = loaderData
+
+  useHealthcheck()
+
   return <Banner title={title} />
 }

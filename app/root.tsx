@@ -1,5 +1,6 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+import { useEffect } from 'react'
 import {
   isRouteErrorResponse,
   Links,
@@ -9,17 +10,29 @@ import {
   ScrollRestoration,
 } from 'react-router'
 
-import stylesheet from './app.css?url'
-import { ThemeSwitch } from './components/ThemeSwitch/ThemeSwitch'
-import { ViewportInfo } from './components/ViewportInfo/ViewportInfo'
-import { NotFoundBanner } from './features/NotFoundBanner/NotFoundBanner'
-import { isDevelopment } from './lib/misc/config'
+import stylesheet from '~/app.css?url'
+import { ThemeSwitch } from '~/components/ThemeSwitch/ThemeSwitch'
+import { ViewportInfo } from '~/components/ViewportInfo/ViewportInfo'
+import { NotFoundBanner } from '~/features/NotFoundBanner/NotFoundBanner'
+import { isDevelopment } from '~/lib/misc/config'
 
 import type { Route } from './+types/root'
 
 const queryClient = new QueryClient()
 
 export default function App() {
+  useEffect(() => {
+    async function enableMocking() {
+      if (isDevelopment()) {
+        const { worker } = await import('~/lib/mocks/browser')
+        await worker.start({
+          onUnhandledRequest: 'bypass',
+        })
+      }
+    }
+    enableMocking()
+  }, [])
+
   return (
     <QueryClientProvider client={queryClient}>
       <Outlet />
