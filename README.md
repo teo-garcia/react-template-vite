@@ -5,7 +5,7 @@
 
 # React Template RR
 
-Start building modern web applications using React and Vite.
+Start building modern web applications using modern React Router.
 
 ## Requirements
 
@@ -35,14 +35,14 @@ Start building modern web applications using React and Vite.
 
 ## Tools
 
-- Vite 4.
-- React 18.
-- Typescript 4.
-- ESLint 8 + Prettier 3.
-- Husky 8 + Lint Staged 15.
-- Jest 29 + Testing Library React 14.
-- Playwright 1.
-- MSW 2.
+- Vite: For rapid development and optimized builds.
+- React: For building interactive user interfaces.
+- TypeScript: For static type checking and improved developer experience.
+- ESLint + Prettier: For consistent code style and catching potential issues.
+- Husky + Lint Staged: For Git hooks to ensure code quality before commits.
+- Jest + Testing Library React: For unit testing React components and utilities.
+- Playwright: For end-to-end testing across multiple browsers.
+- MSW: For mocking API requests during development and testing.
 
 ## Commands
 
@@ -64,73 +64,71 @@ Start building modern web applications using React and Vite.
 
 ## Table of Contents
 
+## Table of Contents
+
 ### 1. Fundamentals
 
-1.1 What is React?  
-1.2 Virtual DOM & Rendering Basics (including Performance Optimizations and Rendering Understanding)  
-1.3 JSX  
-1.4 Components  
-1.5 Props & State  
-1.6 Lifecycle & Rendering Cycle  
-1.7 Event Handling  
-1.8 Conditional Rendering  
-1.9 Lists & Keys  
-1.10 Strict Mode & Reconciliation  
-1.11 Portals  
-1.12 Error Boundaries  
-1.13 Code Splitting & Lazy Loading  
-1.14 Concurrent Features  
-1.15 Profiler API  
-1.16 Common React Patterns  
-1.17 Avoiding Unnecessary Re-Renders  
-1.18 useMemo & React.memo  
-1.19 Profiling Tools  
-1.20 Dynamic Import Performance
+- [What is React?](#11-what-is-react)
+- [Virtual DOM & Rendering Basics](#12-virtual-dom--rendering-basics)
+- [JSX](#13-jsx)
+- [Components](#14-components)
+- [Props & State](#15-props--state)
+- [Lifecycle & Rendering Cycle](#16-lifecycle--rendering-cycle)
+- [Event Handling](#17-event-handling)
+- [Conditional Rendering](#18-conditional-rendering)
+- [Lists & Keys](#19-lists--keys)
+- [Strict Mode & Reconciliation](#110-strict-mode--reconciliation)
+- [Portals](#111-portals)
+- [Error Boundaries](#112-error-boundaries)
+- [Code Splitting & Lazy Loading](#113-code-splitting--lazy-loading)
+- [Concurrent Features](#114-concurrent-features)
+- [Profiler API](#115-profiler-api)
+- [Common React Patterns](#116-common-react-patterns)
+- [Avoiding Unnecessary Re-Renders](#117-avoiding-unnecessary-re-renders)
+- [useMemo & React.memo](#118-usememo--reactmemo)
+- [Profiling Tools](#119-profiling-tools)
+- [Dynamic Import Performance](#120-dynamic-import-performance)
 
 ### 2. Hooks
 
-2.1 Basic Hooks (useState, useEffect)  
-2.2 Performance Hooks (useMemo, useCallback)  
-2.3 Derived State & Advanced Hooks  
-2.4 useContext & Custom Hooks  
-2.5 useRef & Refs  
-2.6 useReducer (Basic & Advanced)  
-2.7 useTransition & useDeferredValue  
-2.8 useId  
-2.9 useSyncExternalStore  
-2.10 useInsertionEffect  
-2.11 useLayoutEffect  
-2.12 useDebugValue
+- [Basic Hooks](#21-basic-hooks-usestate-useeffect)
+- [Performance Hooks](#22-performance-hooks-usememo-usecallback)
+- [Derived State & Advanced Hooks](#23-derived-state--advanced-hooks)
+- [useContext & Custom Hooks](#24-usecontext--custom-hooks)
+- [useRef & Refs](#25-useref--refs)
+- [useReducer](#26-usereducer-basic--advanced)
+- [useTransition & useDeferredValue](#27-usetransition--usedeferredvalue)
+- [useId](#28-useid)
+- [useSyncExternalStore](#29-usesyncexternalstore)
+- [useInsertionEffect](#210-useinsertioneffect)
+- [useLayoutEffect](#211-uselayouteffect)
+- [useDebugValue](#212-usedebugvalue)
 
 ### 3. State Management
 
-3.1 Local State  
-3.2 Global State  
-3.3 Network State with React Query  
-3.4 Comparison of State Management Solutions
+- [Local State](#31-local-state)
+- [Global State](#32-global-state)
+- [Network State with React Query](#33-network-state-with-react-query)
+- [Comparison of State Management Solutions](#34-comparison-of-state-management-solutions)
 
 ### 4. Routing with React Router
 
-4.1 Introduction & Setup  
-4.2 Routing Basics (Static & Dynamic)  
-4.3 Route Parameters & Nested Routes  
-4.4 Route Loaders & Actions  
-4.5 Error Handling in Routes  
-4.6 Advanced Routing Patterns:  
- 4.6.1 Auth/Protected Routes  
- 4.6.2 Lazy Loaded Routes  
- 4.6.3 Data-Driven Routes  
- 4.6.4 Parameterized & Nested Layouts  
-4.7 Generouted & Code Generation  
-4.8 Performance & Best Practices
+- [Introduction & Setup](#41-introduction--setup)
+- [Routing Basics](#42-routing-basics-static--dynamic)
+- [Route Parameters & Nested Routes](#43-route-parameters--nested-routes)
+- [Route Loaders & Actions](#44-route-loaders--actions)
+- [Error Handling in Routes](#45-error-handling-in-routes)
+- [Advanced Routing Patterns](#46-advanced-routing-patterns)
+- [Generouted & Code Generation](#47-generouted--code-generation)
+- [Performance & Best Practices](#48-performance--best-practices)
 
 ### 5. Testing
 
-5.1 Unit Testing  
-5.2 Integration Testing  
-5.3 React Testing Library  
-5.4 MSW for API Mocking  
-5.5 Storybook Testing
+- [Unit Testing](#51-unit-testing)
+- [Integration Testing](#52-integration-testing)
+- [React Testing Library](#53-react-testing-library)
+- [MSW for API Mocking](#54-msw-for-api-mocking)
+- [Storybook Testing](#55-storybook-testing)
 
 ## 1. Fundamentals
 
