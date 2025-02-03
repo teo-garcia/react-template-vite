@@ -11,8 +11,8 @@ import {
 } from 'react-router'
 
 import stylesheet from '~/app.css?url'
-import { ThemeSwitch } from '~/components/ThemeSwitch/ThemeSwitch'
-import { ViewportInfo } from '~/components/ViewportInfo/ViewportInfo'
+import { ThemeSwitch } from '~/components/theme-switch/theme-switcg'
+import { ViewportInfo } from '~/components/viewport-info/viewport-info'
 import { NotFoundBanner } from '~/features/NotFoundBanner/NotFoundBanner'
 import { isDevelopment } from '~/lib/misc/config'
 
@@ -85,7 +85,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
         </div>
         <div className="text-gray-600 dark:text-gray-300 mb-6">{details}</div>
         {stack && (
-          <div className="bg-gray-100 dark:bg-gray-900 rounded p-4">
+          <div className="bg-gray-100 dark:bg-gray-900 rounded-sm p-4">
             <code className="text-sm text-gray-800 dark:text-gray-200 font-mono">
               {stack}
             </code>

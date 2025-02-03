@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react'
 
-import { Layout } from './Layout'
+import { Layout } from './layout'
 
 describe('<Layout /> tests', () => {
   test('It should render', () => {
