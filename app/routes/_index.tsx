@@ -1,4 +1,4 @@
-import { Banner } from '~/features/Banner/Banner'
+import { Banner } from '~/features/banner/banner'
 import { useHealthcheck } from '~/lib/hooks/useHealthcheck'
 
 import type { Route } from './+types/_index'

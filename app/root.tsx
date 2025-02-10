@@ -13,7 +13,7 @@ import {
 import stylesheet from '~/app.css?url'
 import { ThemeSwitch } from '~/components/theme-switch/theme-switcg'
 import { ViewportInfo } from '~/components/viewport-info/viewport-info'
-import { NotFoundBanner } from '~/features/NotFoundBanner/NotFoundBanner'
+import { NotFoundBanner } from '~/features/not-found-banner/not-found-banner'
 import { isDevelopment } from '~/lib/misc/config'
 
 import type { Route } from './+types/root'
