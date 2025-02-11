@@ -20,27 +20,6 @@ import type { Route } from './+types/root'
 
 const queryClient = new QueryClient()
 
-export default function App() {
-  useEffect(() => {
-    async function enableMocking() {
-      if (isDevelopment()) {
-        const { worker } = await import('~/lib/mocks/browser')
-        await worker.start({
-          onUnhandledRequest: 'bypass',
-        })
-      }
-    }
-    enableMocking()
-  }, [])
-
-  return (
-    <QueryClientProvider client={queryClient}>
-      <Outlet />
-      <ReactQueryDevtools buttonPosition="bottom-left" />
-    </QueryClientProvider>
-  )
-}
-
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -109,3 +88,24 @@ export const links: Route.LinksFunction = () => [
   },
   { rel: 'stylesheet', href: stylesheet },
 ]
+
+export default function App() {
+  useEffect(() => {
+    async function enableMocking() {
+      if (isDevelopment()) {
+        const { worker } = await import('~/lib/mocks/browser')
+        await worker.start({
+          onUnhandledRequest: 'bypass',
+        })
+      }
+    }
+    enableMocking()
+  }, [])
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <Outlet />
+      <ReactQueryDevtools buttonPosition="bottom-left" />
+    </QueryClientProvider>
+  )
+}
